@@ -70,3 +70,23 @@ input:hover{
     border: #2691d9;
 }
 option{color: black;}
+.start{
+    display: flex;
+}
+.droite{
+    display: flex;
+    padding: 150px;
+}
+.lst{
+    color: white;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+
+}
+.entete{
+    font-size: 30px;
+    font-style: italic;
+
+}
+
