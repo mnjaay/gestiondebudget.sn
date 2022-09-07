@@ -1,0 +1,70 @@
+
+.principale p{
+    font-style: italic;
+    font-size: 90px;
+    text-align: center;
+}
+
+
+.resultat{
+    font-size: 40px;
+}
+.saisir_desc{
+    height: 30px;
+    border-radius:  5px;
+    font-size: 20px;
+    color: white;
+}
+.saisir_montant{
+    height: 30px;
+    margin: 20px;
+    padding-left: 20px;
+    border-radius:  5px;
+    font-size: 20px;
+    color: white;
+}
+.choix{
+    border-radius: 5px;
+    height: 30px;
+    background: none;
+    border: white;
+    color: white;
+}
+body{
+    background-image: url(image2.jpg);
+    color: white;
+}
+.valider{
+    height: 50px;
+    border-radius: 25px;
+    width: 250px;
+    margin: 20px;
+    background-color: #2691d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;  
+}
+.valider:hover{
+    background-color: white;
+    color: #2691d9;
+    transition: 0.3s;
+}
+.statut{
+    font-size: 30px;
+    display: flex;
+    padding-left: 10px;
+}
+.depense{
+    padding-left: 30px;
+}
+input{
+    background: none;
+    border-bottom: 2px solid black;
+
+}
+input:hover{
+    background-color: #17405c;
+    transition: 0.3s;
+}
+option{color: black;}
