@@ -12,10 +12,10 @@
 
     <div class="principale"><p>Bienvenue dans la plateforme de GESTION DE BUDGET</p>  </div>
     <form>
-    <div class="gauche">
-     <div class="presentation">
-        <p class="resultat">Budget total    :   + 0.00</p>
-        <div class="statut">
+      <div class="gauche">
+         <div class="presentation">
+           <p class="resultat">Budget total    :   + 0.00</p>
+          <div class="statut">
              <div class="revenu"><p>Revenus</p><p class="prix_revenus" id="prix">+ 0.00</p></div>
              <div class="depense"><p>Depenses</p><p class="prix_depense" id="prix">- 0.00</p></div>
         </div>
@@ -27,14 +27,31 @@
             <option>-</option>
         </select>
         
-        <input type="text" class="saisir_desc">
-        <label class="text" >Description</label><br>
-        <input type="text" class="saisir_montant">
-        <label class="text">Montant</label><br>
+        <input type="text" class="saisir_desc" placeholder="Description"><br>
+        <input type="text" class="saisir_montant" placeholder="Montant"><br>
         <input type="submit" value="Valider" class="valider">
+      </div>
      </div>
-    </div>
-
     </form>
+    <div class="droite">
+        <div>
+            <div>
+                <p>Liste Revenus</p>
+                <p class="liste">Salaire        200000</p>
+                <p class="liste">Business       200000</p>
+                <p class="liste">pret banque    200000</p>
+                
+            </div>
+            
+            <div>
+                <p>Liste Depenses</p>
+                <p class="liste">Loyer         200000</p>
+                <p class="liste">Manger        200000</p>
+                <p class="liste">Transport     200000</p>
+            </div>
+
+        </div>
+    </div>
+      
 </body>
 </html>
