@@ -72,10 +72,12 @@ input:hover{
 option{color: black;}
 .start{
     display: flex;
+    justify-content: space-between;
 }
 .droite{
     display: flex;
-    padding: 150px;
+   
+    
 }
 .lst{
     color: white;
@@ -89,4 +91,10 @@ option{color: black;}
     font-style: italic;
 
 }
+.solde{
+    margin: 70px;
+    border: 3px solid black;
+    height: 45px;
+}
+
 
