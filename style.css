@@ -67,13 +67,15 @@ input:hover{
     border: #2691d9;
 }
 option{color: black;}
-.start{
+/*.start{
     display: flex;
     justify-content: space-between;
 
-}
+}*/
 .droite{
-    display: flex;    
+    display: flex;   
+    text-align: center; 
+    padding-left: 400px;
 }
 
 .lst{
@@ -81,8 +83,10 @@ option{color: black;}
     border: none;
     background-color: black;
     cursor: pointer;
+    
 
 }
+
 .entete{
     font-size: 30px;
     font-style: italic;
@@ -98,4 +102,18 @@ option{color: black;}
     border:2px solid white ;
     padding-left: 25px;
     cursor: pointer;
+}
+.option{
+    display: flex;
+    margin: 10px;
+    padding-left: 370px;
+}
+.lst_revenu{
+    padding-right: 35px;
+}
+@media screen and (max-width: 320px) {
+    .statut {
+        justify-content: flex-start;
+    }
+    
 }
