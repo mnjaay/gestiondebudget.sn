@@ -5,10 +5,6 @@
     text-align: center;
 }
 
-
-.resultat{
-    font-size: 40px;
-}
 .saisir_desc{
     height: 30px;
     border-radius:  5px;
@@ -53,12 +49,14 @@ body{
 .statut{
     font-size: 30px;
     display: flex;
-    padding-left: 10px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    justify-content: space-around;
 
 }
-.depense{
-    padding-left: 30px;
-}
+
+
+
 input{
     background: none;
 
@@ -75,10 +73,9 @@ option{color: black;}
 
 }
 .droite{
-    display: flex;
-   
-    
+    display: flex;    
 }
+
 .lst{
     color: white;
     border: none;
@@ -97,4 +94,8 @@ option{color: black;}
     height: 45px;
 }
 
-
+#prix{
+    border:2px solid white ;
+    padding-left: 25px;
+    cursor: pointer;
+}
