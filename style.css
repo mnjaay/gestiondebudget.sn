@@ -30,7 +30,8 @@ body{
     background-image: url(image2.jpg);
     color: white;
 }
-.valider{
+.ajout_revenu
+{
     height: 50px;
     border-radius: 25px;
     width: 250px;
@@ -40,6 +41,18 @@ body{
     border: none;
     cursor: pointer;
     outline: none;  
+}
+.ajout_depense{
+    height: 50px;
+    border-radius: 25px;
+    width: 250px;
+    margin: 20px;
+    background-color: #2691d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;  
+
 }
 .valider:hover{
     background-color: white;
@@ -111,9 +124,39 @@ option{color: black;}
 .lst_revenu{
     padding-right: 35px;
 }
-@media screen and (max-width: 320px) {
-    .statut {
-        justify-content: flex-start;
-    }
+.saisit{
+     
+    padding-left: 500px;
+}
+.ajout .liste1{
+    font-size: 30px;
+    margin: 5px;
     
 }
+.liste{
+    list-style: none;
+}
+.ajout{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.liste2{
+    font-size: 30px;
+    padding-left: 100px;
+    
+}
+.ajout li{
+    flex: 1;
+}
+.ajout button{
+    padding-left: 10px;
+}
+button{
+    padding-left: 10px;
+    background-color:#0b3d5e;
+    color: white;
+    cursor: pointer;
+}
+
+
