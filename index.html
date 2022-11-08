@@ -15,9 +15,9 @@
       <div class="presentation">
         <div class="statut">
                
-          <div class="revenu"><p>Revenus</p><p class="prix_revenus" id="prix">0.00</p></div>
-          <div class="resulat"><p class="resultat" id="resultat">Budget total <p id="prix" class="rlt">0.00</p></p></div>
-          <div class="depense"><p>Depenses</p> <p class="prix_depense" id="prix">0.00</p></div>
+          <div class="revenu"><p>Revenus</p><p class="prix_revenus" id="prix">0</p></div>
+          <div class="resulat"><p class="resultat" id="resultat">Budget total <p id="prix" class="rlt">0</p></p></div>
+          <div class="depense"><p>Depenses</p> <p class="prix_depense" id="prix">0</p></div>
      </div>
  
   </div>
@@ -71,7 +71,7 @@
   
   <script>
     const saisit=document.querySelector('.saisit');
-    const btn=document.querySelector(".valider");
+    const btn=document.querySelector("#valider");
     const ul_liste=document.querySelector(".liste")
     const saisir_desc=document.querySelector(".saisir_desc");
     var   saisir_montant=document.querySelector(".saisir_montant");
@@ -94,15 +94,9 @@
     ajout_depense.addEventListener("click",afficher_depense);
     btn.addEventListener("click",calcul);
 
-    function calcul(){
-
-    let total;
-    total=parseInt(total);
-    montant=parseInt(saisir_montant);
-    total=total+montant;
-    rlt.textContent=total;
-
-    }
+    saisir_montant=parseInt(saisir_montant);
+    rlt=parseInt(rlt);
+    prix_revenus=parseInt(prix_revenus);
 
   function afficher_revenu(event){
     event.preventDefault();
@@ -137,7 +131,8 @@
     ul_liste.appendChild(ajout);
   
     
-   
+   rlt.textContent=parseInt(rlt.textContent)+parseInt(saisir_montant.value);
+   prix_revenus.textContent=parseInt(prix_revenus.textContent)+parseInt(saisir_montant.value);
   }
   
   function afficher_depense(event){
@@ -171,6 +166,9 @@
 
 
     ul_liste.appendChild(ajout);
+
+    rlt.textContent=parseInt(rlt.textContent)-parseInt(saisir_montant.value);
+    prix_depense.textContent=parseInt(prix_depense.textContent)+parseInt(saisir_montant.value);
   
     
    
